@@ -3,9 +3,11 @@ data "aci_tenant" "conmurph" {
   name  = "conmurph"
 }
 
+/*
 resource "aci_application_profile" "application_1" {
   tenant_dn  = "${data.aci_tenant.conmurph.id}"
   name       = "application_1"
+  #name_alias = "app_1_terraform"
 }
 
 resource "aci_application_epg" "application_1" {
@@ -23,4 +25,4 @@ resource "aci_subnet" "application_1" {
   parent_dn                    = "${aci_bridge_domain.application_1.id}"
   ip                                  = "1.1.1.254/24"
   description                         = "This subject is created by terraform"
-}
+}*/
