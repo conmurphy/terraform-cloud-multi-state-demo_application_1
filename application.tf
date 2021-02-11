@@ -7,7 +7,7 @@ data "aci_tenant" "conmurph" {
 resource "aci_application_profile" "application_1" {
   tenant_dn  = "${data.aci_tenant.conmurph.id}"
   name       = "application_1"
-  #name_alias = "app_1_terraform"
+  name_alias = "app_1_terraform"
 }
 
 resource "aci_application_epg" "application_1" {
