@@ -3,9 +3,9 @@ provider "aci" {
   # cisco-aci user name
   username = "admin"
   # cisco-aci password
-  password = ""
+  password = var.password
   # cisco-aci url
-  url      =  ""
+  url      =  var.url
   insecure = true
 }
 
